@@ -7,7 +7,7 @@
 }
 #login h1 {
   color: #1fa67b;
-  font-size: 18px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   padding-bottom: 20px;
@@ -23,7 +23,6 @@
 #divButton{
   text-align: center;
 }
-
 
 /*    --------------------------------------------------
 :: Inputs & Buttons

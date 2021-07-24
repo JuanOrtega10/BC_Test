@@ -15,14 +15,14 @@ function App() {
       <div class="row">
         <div class="col-xs-12">
             <div class="form-wrap">
-              <h1>Log in with your email account</h1>
+              <h1>Demo</h1>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div class="form-group">
                   <label htmlFor="email"  class="sr-only">Email</label>
                   <input type="email"  name="email" id="email" class="form-control" placeholder="example@a.com" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
                 </div>
                 <div>
-                    <input type="file" {...register("data", { required: true })} />
+                    <input class="custom-file-input" type="file" {...register("data", { required: true })} />
                 </div>
                 <br></br>
                   <div id="divButton">
