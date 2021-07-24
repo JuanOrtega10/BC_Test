@@ -9,17 +9,33 @@ function App() {
     console.log(data)
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" placeholder="example@a.com" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
+    <section id="login">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+            <div class="form-wrap">
+              <h1>Log in with your email account</h1>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div class="form-group">
+                  <label htmlFor="email"  class="sr-only">Email</label>
+                  <input type="email"  name="email" id="email" class="form-control" placeholder="example@a.com" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
+                </div>
+                <div>
+                    <input type="file" {...register("data", { required: true })} />
+                </div>
+                <br></br>
+                  <div id="divButton">
+                  <button  type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">Submit</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-          <label htmlFor="data">File</label>
-          <input type="file" {...register("data", { required: true })} />
-      </div>
-      <button>Submit</button>
-    </form>
+    
+</section>
+    
 
   );
 }
